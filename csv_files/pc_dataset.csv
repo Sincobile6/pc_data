@@ -1,0 +1,31 @@
+Continent;Country or State;Province or City;;;Shop Name;Shop Age;;;PC Make;PC Model;Storage Type;RAM;Storage Capacity;;;Customer Name;Customer Surname;Customer Contact Number;Customer Email Address;;;Sales Person Name;Sales Person Department
+North America;Texas;McKinney;;;DEF Machines;7;;;Asus;ROG Strix Scar III;HDD;16GB;1TB;;;Michael;Obrien;8759422956;carterpatricia@example.net;;;Ashley Wright;New Sales
+Africa;Kenya;Mombasa;;;XYZ Tech;7;;;HP;Stream;HDD;16GB;1TB;;;Kevin;Romero;(430)332-4476;tfreeman@example.com;;;Tonya Nolan;Repairs
+North America;California;Oxnard;;;XYZ Tech;7;;;Apple;Apple Lisa;HDD;2GB;256GB;;;Sarah;Mcconnell;(474)419-1030;richardsshelley@example.com;;;Alyssa Martinez;Repairs
+North America;Pennsylvania;Wilkes-Barre;;;Benjis Tech;2;;;Lenovo;IdeaPad Flex 5;SSD;4GB;1TB;;;Sarah;King;(628)735-7206;nealrebecca@example.com;;;Lisa Graham;Returns
+North America;Michigan;Saginaw;;;Benjis Tech;3;;;Apple;Apple Mac Mini;HDD;16GB;256GB;;;Gregory;Brown;900-400-3165x799;roberthebert@example.net;;;Allen Juarez;Second-hand Sales
+North America;Ohio;Beavercreek;;;Western International PCs;2;;;Dell;Precision;HDD;8GB;500GB;;;Karen;Nguyen;268.968.3311x03727;simmonsdillon@example.com;;;Max Mccann;New Sales
+Africa;Botswana;Kweneng;;;CK Tech Store;2;;;Asus;ZenBook UX425;HDD;4GB;256GB;;;Alexis;Gray;968-253-8760;sawyermark@example.com;;;Madison Davis;Repairs
+Africa;Ethiopia;Harari;;;Greens Laptops and PCs;2;;;Acer;Spin 5;HDD;2GB;256GB;;;Garrett;Jones;373-794-7580x20731;ricky11@example.com;;;Joseph Good;Repairs
+North America;California;Irvine;;;GH PC Shop;1;;;Microsoft;Surface Neo;HDD;2GB;1TB;;;Christina;Little;(867)493-2795x5301;fjohnson@example.com;;;Amber Montgomery;Second-hand Sales
+Africa;South Africa;Northern Cape;;;S & A Computer Place;7;;;Asus;TUF Gaming A15;SSD;2GB;256GB;;;Daniel;Lee;+1-596-996-3259x547;lauriecastillo@example.com;;;Daniel Lane;Repairs
+Africa;Ghana;Upper East;;;XYZ Tech;4;;;Lenovo;ThinkPad X13 Yoga;SSD;16GB;500GB;;;Desiree;Garza;354-460-5679;carlos96@example.com;;;Kevin Lee;Returns
+Africa;Morocco;Kenitra;;;Jacks Hardware;6;;;Dell;Precision;HDD;16GB;1TB;;;Joshua;Adams;423-668-1647;fdaniels@example.org;;;Amy Owens;New Sales
+Africa;Tanzania;Mtwara;;;GH PC Shop;10;;;Microsoft;Surface Pro;HDD;4GB;1TB;;;Shane;Brown;(752)070-2331;melissa64@example.com;;;Mary Fisher;Repairs
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;Cost Price;Sale Price;Discount Amount;Purchase Date;Ship Date;Finance Amount;Credit Score;Cost of Repairs;Total Sales per Employee;PC Market Price;;Payment Method;;;Channel;;;Priority;;;
+;;;18384;23384;937;2022/07/17;N/A;0;685;0;570;21010;;Cash;;;Offline;;;Low;;;
+;;;18950;23116;50;2024/01/13;2024/02/12;5166;786;3465;380;22010;;Finance;;;Online;;;High;;;
+;;;15215;19439;286;2021/11/22;N/A;0;401;1981;146;17913;;Cash;;;Offline;;;Medium;;;
+;;;14132;16444;132;2023/10/07;N/A;0;656;0;856;15699;;Cash;;;Offline;;;High;;;
+;;;12365;15254;984;2023/10/24;2023/11/04;0;488;0;549;13599;;Bank Transfer;;;Online;;;Medium;;;
+;;;12187;14372;549;2021/05/21;N/A;43712;573;0;781;13327;;Finance;;;Offline;;;Low;;;
+;;;19899;23008;502;2022/10/10;2022/10/18;0;676;3902;762;22285;;Cash;;;Online;;;Medium;;;
+;;;26911;30154;439;2022/01/25;2022/02/02;0;550;3962;1000;30047;;Cash;;;Online;;;Medium;;;
+;;;2688;5948;894;2023/02/08;N/A;0;473;0;321;3130;;Bank Transfer;;;Offline;;;High;;;
+;;;19245;23505;555;2023/09/29;N/A;3330;434;1783;850;20130;;Finance;;;Offline;;;Low;;;
+;;;6466;9048;803;2023/07/06;2023/07/14;0;685;0;955;8823;;Cash;;;Online;;;Low;;;
+;;;24519;26768;201;2023/04/29;2023/05/21;29024;782;0;983;26325;;Finance;;;Online;;;Medium;;;
+;;;23367;27513;232;2021/08/12;N/A;0;423;4570;378;24109;;Cash;;;Offline;;;Medium;;;

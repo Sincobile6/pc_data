@@ -63,7 +63,7 @@ select* from [computer_std].[dbo].[dim_customer]
 --create table dim_pc_spec on computer_std
 
   --drop old table dim_pc and create new table dim_pc_spec
-  drop table [computer_std].[dbo].[dim_pc]
+  drop table [computer_std].[dbo].[dim_pc_spec]
 
   create table [computer_std].[dbo].[dim_pc_spec](
   [Pc_Spec_ID] INT IDENTITY(1,1) PRIMARY KEY ,
@@ -84,7 +84,7 @@ select* from [computer_std].[dbo].[dim_customer]
 
 --create table dim_priority on computer_std database
 
-  --drop this data and create dim_customers again
+  --drop this data and create dim_priority again
   drop table [computer_std].[dbo].[dim_priority]
 
   create table [computer_std].[dbo].[dim_priority](
@@ -121,6 +121,41 @@ select* from [computer_std].[dbo].[dim_customer]
 
   select* from [computer_std].[dbo].[dim_shop]
 
+  --create table dim_payment
+
+  drop table [computer_std].[dbo].[dim_payment]
+  create table [computer_std].[dbo].[dim_payment](
+  [Payment_ID]INT IDENTITY(1,1) PRIMARY KEY,
+  [Payment_Method][nvarchar](250) not null
+  )
+
+  --insert data into table 
+  insert into [computer_std].[dbo].[dim_payment](Payment_Method)
+  select distinct Payment_Method
+  from [computer_std].[dbo].[pc_dataset]
+   
+   --select all payment methods
+   select* from [computer_std].[dbo].[dim_payment]
+
+   --create table dim_date 
+
+
+  drop table [computer_std].[dbo].[dim_date]
+  create table [computer_std].[dbo].[dim_date](
+  [Date_ID]INT IDENTITY(1,1) PRIMARY KEY,
+  [Purchase_Date] [datetime2](7) NOT NULL,
+  [Ship_Date] [nvarchar](50) NOT NULL,
+
+    )
+
+  --insert data into table 
+  insert into [computer_std].[dbo].[dim_date](Purchase_Date, Ship_Date)
+  select distinct Purchase_Date, Ship_Date
+  from [computer_std].[dbo].[pc_dataset]
+   
+   --select all payment methods
+   select* from [computer_std].[dbo].[dim_date]
+
 --creating table orders_fact on computer_std database  
 
   --drop old data and create orders_fact again
@@ -131,8 +166,6 @@ select* from [computer_std].[dbo].[dim_customer]
   [Cost_Price] [int] NOT NULL,
   [Sale_Price] [int] NOT NULL,
   [Discount_Amount] [int] NOT NULL,
-  [Purchase_Date] [datetime2](7) NOT NULL,
-  [Ship_Date] [nvarchar](50) NOT NULL,
   [Finance_Amount] [nvarchar](50) NOT NULL,
   [Cost_of_Repairs] [nvarchar](50) NOT NULL,
   [Total_Sales_per_Employee] [int] NOT NULL,
@@ -140,10 +173,10 @@ select* from [computer_std].[dbo].[dim_customer]
   [Credit_Score] [int] NOT NULL)
 
   --insert data into table
-  insert into [computer_std].[dbo].[orders_fact] (Cost_Price, Sale_Price, Discount_Amount, Purchase_Date,
-              Ship_Date, Finance_Amount, Cost_of_Repairs, Total_Sales_per_Employee, PC_Market_Price, Credit_Score  )
-  select distinct Cost_Price, Sale_Price, Discount_Amount, Purchase_Date,
-              Ship_Date, Finance_Amount, Cost_of_Repairs, Total_Sales_per_Employee, PC_Market_Price, Credit_Score
+  insert into [computer_std].[dbo].[orders_fact] (Cost_Price, Sale_Price, Discount_Amount, 
+               Finance_Amount, Cost_of_Repairs, Total_Sales_per_Employee, PC_Market_Price, Credit_Score  )
+  select distinct Cost_Price, Sale_Price, Discount_Amount, 
+               Finance_Amount, Cost_of_Repairs, Total_Sales_per_Employee, PC_Market_Price, Credit_Score
   from [computer_std].[dbo].[pc_dataset]
 
   --select all data from orders_fact
