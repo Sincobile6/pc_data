@@ -68,7 +68,7 @@ constraint fk_Storage_ID
                   pay.Payment_ID, cha.Channel_ID, sto.Storage_ID, stg.Cost_Price, stg.Sale_Price, stg.Discount_Amount,stg.Finance_Amount, 
                   stg.Cost_of_Repairs, stg.Total_Sales_per_Employee, stg.PC_Market_Price, stg.Credit_Score
 
-  from [computer_std].[dbo].[pc_dataset] stg
+  from [computer_std].[dbo].[pc_dataset_clean] stg
  
 
  inner join [computer_std].[dbo].[dim_customer] cust
