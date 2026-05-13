@@ -10,7 +10,7 @@
   --insert data into table 
   insert into [computer_std].[dbo].[dim_payment](Payment_Method)
   select distinct Payment_Method
-  from [computer_std].[dbo].[pc_dataset]
+  from [computer_std].[dbo].[pc_dataset_clean]
    
    --select all payment methods
    select* from [computer_std].[dbo].[dim_payment]

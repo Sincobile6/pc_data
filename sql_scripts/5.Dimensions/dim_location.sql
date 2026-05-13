@@ -14,7 +14,7 @@
   --insert data into table
   insert into [computer_std].[dbo].[dim_location](Continent,Country_or_State,Province_or_City)
   select distinct Continent,Country_or_State,Province_or_City
-  from [computer_std].[dbo].[pc_dataset]
+  from [computer_std].[dbo].[pc_dataset_clean]
 
   --select all data in the table
   select * from [computer_std].[dbo].[dim_location]

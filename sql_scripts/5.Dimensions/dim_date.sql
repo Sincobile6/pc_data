@@ -12,7 +12,7 @@
   --insert data into table 
   insert into [computer_std].[dbo].[dim_date](Purchase_Date, Ship_Date)
   select distinct Purchase_Date, Ship_Date
-  from [computer_std].[dbo].[pc_dataset]
+  from [computer_std].[dbo].[pc_dataset_clean]
    
    --select all payment methods
    select* from [computer_std].[dbo].[dim_date]

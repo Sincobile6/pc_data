@@ -12,7 +12,7 @@
   --insert data into table
   insert into [computer_std].[dbo].[dim_shop](Shop_Name, Shop_Age)
   select distinct Shop_Name, Shop_Age
-  from [computer_std].[dbo].[pc_dataset]
+  from [computer_std].[dbo].[pc_dataset_clean]
 
   --select all data from dim_shop
 

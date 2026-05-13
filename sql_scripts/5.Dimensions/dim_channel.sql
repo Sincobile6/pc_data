@@ -10,7 +10,7 @@
   --insert data into table
   insert into [computer_std].[dbo].[dim_channel](Channel)
   select distinct Channel
-  from [computer_std].[dbo].[pc_dataset]
+  from [computer_std].[dbo].[pc_dataset_clean]
 
   --select all data from dim_channel
   select* from [computer_std].[dbo].[dim_channel]

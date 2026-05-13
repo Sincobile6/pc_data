@@ -1,4 +1,5 @@
 --create orders_fact 
+
   drop table [computer_std].[dbo].[orders_fact]
 
   create table [computer_std].[dbo].[orders_fact](

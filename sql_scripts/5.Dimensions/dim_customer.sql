@@ -16,7 +16,7 @@
                                   Customer_Contact_Number, Customer_Email_Address )
 select distinct Customer_Name, Customer_Surname, 
                Customer_Contact_Number, Customer_Email_Address
-from [computer_std].[dbo].[pc_dataset]
+from [computer_std].[dbo].[pc_dataset_clean]
 
 --select all data from dim_customers
 
